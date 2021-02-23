@@ -1,0 +1,19 @@
+.active_btn {
+  background-color: deepskyblue !important;
+}
+.btn {
+  border: 1px solid whitesmoke !important;
+}
+.btn:focus {
+  box-shadow: none !important;
+  /* outline: thin dotted !important; */
+}
+.search_btn {
+  margin-top: 0.5rem;
+  background-color: #eee !important;
+  width: 100%;
+}
+.search_btn:hover,
+.search_btn:focus {
+  background-color: deepskyblue !important;
+}

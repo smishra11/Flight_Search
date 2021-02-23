@@ -1,11 +1,13 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import Plane from './airplane.png';
+import Search from './components/Search';
+import './App.css';
 
 function App() {
   return (
     <div>
       <Navbar />
+      <Search />
     </div>
   );
 }
