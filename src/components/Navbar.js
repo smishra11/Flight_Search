@@ -4,7 +4,7 @@ import plane from '../assets/airplane.png';
 function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-light bg-light">
+      <nav className="navbar navbar-light" style={{ backgroundColor: '#eee' }}>
         <div className="navbar-brand" style={{ fontWeight: 'bold' }}>
           <img
             src={plane}
