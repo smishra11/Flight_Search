@@ -5,7 +5,10 @@ function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-light" style={{ backgroundColor: '#eee' }}>
-        <div className="navbar-brand" style={{ fontWeight: 'bold' }}>
+        <div
+          className="navbar-brand"
+          style={{ fontWeight: 'bold', fontSize: '25px' }}
+        >
           <img
             src={plane}
             width="30"
