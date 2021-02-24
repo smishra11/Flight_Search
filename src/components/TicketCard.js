@@ -2,10 +2,10 @@ import React from 'react';
 
 function TicketCard() {
   return (
-    <div className="card">
+    <div className="card mb-3" id="ticket_card">
       <div className="card-body">
         <div style={{ display: 'flex' }}>
-          <div style={{ width: '50%', fontSize: '13px' }}>
+          <div style={{ width: '50%', fontSize: '14px' }}>
             <div style={{ fontSize: '14px', marginBottom: '6px' }}>
               <b>₹ 2500</b>
             </div>
@@ -25,7 +25,11 @@ function TicketCard() {
             }}
           >
             <div>Flight image</div>
-            <div>Book</div>
+            <div>
+              <button type="button" className="btn btn-sm btn-info">
+                <b>Book</b>
+              </button>
+            </div>
           </div>
         </div>
       </div>

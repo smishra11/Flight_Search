@@ -25,6 +25,9 @@ function Result() {
         </div>
         <div>
           <TicketCard />
+          <TicketCard />
+          <TicketCard />
+          <TicketCard />
         </div>
       </div>
     </div>

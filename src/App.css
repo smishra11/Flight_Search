@@ -17,3 +17,12 @@
 .search_btn:focus {
   background-color: deepskyblue !important;
 }
+#ticket_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.input-range__label-container {
+  color: black;
+}
+.input-range__label--max > .input-range__label-container {
+  margin-right: 2rem;
+}
