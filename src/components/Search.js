@@ -7,7 +7,7 @@ import flightData from '../data';
 function Search() {
   const [btnType, setbtnType] = useState('oneWay');
   const [passengerCount, setPassengerCount] = useState(1);
-  const [priceRange, setPriceRange] = useState(5000);
+  const [priceRange, setPriceRange] = useState(10000);
 
   const [bookReturn, setBookReturn] = useState(false);
   const [originCity, setOriginCity] = useState('');
@@ -92,18 +92,21 @@ function Search() {
     let result = flightData.filter((data) => {
       if (
         data &&
+        data.from &&
         data.from.city &&
-        data.to.city &&
         data.from.city
           .toLowerCase()
           .includes(destinationCity.trim().toLowerCase()) &&
+        data.to &&
+        data.to.city &&
         data.to.city.toLowerCase().includes(originCity.trim().toLowerCase()) &&
-        data.depart === departureDate &&
+        data.depart === returnDate &&
         data.price <= priceRange
       ) {
         return data;
       }
     });
+    console.log('return', result);
     setReturnFilterData(result);
   };
 

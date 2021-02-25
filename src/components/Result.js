@@ -44,18 +44,15 @@ function Result(props) {
                   <img src={forwardArrow} alt="arrow" className="ml-2" />
                 </span>
               </div>
-              <div>
-                Date : {new Date().getDate()}/{new Date().getMonth()}/
-                {new Date().getFullYear()}
-              </div>
             </div>
             <div>
               {bookReturn && isSearchClicked ? (
                 <div className="row">
                   <div className="col">
-                    <p style={{ color: 'deepskyblue', fontWeight: 'bold' }}>
+                    <div style={{ color: 'deepskyblue', fontWeight: 'bold' }}>
                       Departure flight
-                    </p>
+                      <p>{filteredData[0].depart}</p>
+                    </div>
                     <TicketCard
                       filteredData={filteredData}
                       passengerCount={passengerCount}
@@ -63,9 +60,10 @@ function Result(props) {
                   </div>
                   {returnFilterData.length && returnFilterData ? (
                     <div className="col">
-                      <p style={{ color: 'deepskyblue', fontWeight: 'bold' }}>
+                      <div style={{ color: 'deepskyblue', fontWeight: 'bold' }}>
                         Return flight
-                      </p>
+                        <p>{returnFilterData[0].depart}</p>
+                      </div>
                       <TicketCard
                         filteredData={returnFilterData}
                         passengerCount={passengerCount}
@@ -75,9 +73,10 @@ function Result(props) {
                 </div>
               ) : (
                 <>
-                  <p style={{ color: 'deepskyblue', fontWeight: 'bold' }}>
+                  <div style={{ color: 'deepskyblue', fontWeight: 'bold' }}>
                     Departure flight
-                  </p>
+                    <p>{filteredData[0].depart}</p>
+                  </div>
                   <TicketCard
                     filteredData={filteredData}
                     passengerCount={passengerCount}
