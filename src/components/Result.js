@@ -2,7 +2,9 @@ import React from 'react';
 import forwardArrow from '../assets/Forward.svg';
 import TicketCard from './TicketCard';
 
-function Result() {
+function Result(props) {
+  const { filteredData, bookReturn, isSearchClicked, returnFilterData } = props;
+
   return (
     <div className="card">
       <div className="card-body">
@@ -24,10 +26,29 @@ function Result() {
           </div>
         </div>
         <div>
-          <TicketCard />
-          <TicketCard />
-          <TicketCard />
-          <TicketCard />
+          {bookReturn && isSearchClicked ? (
+            <div className="row">
+              <div className="col">
+                <p style={{ color: 'deepskyblue', fontWeight: 'bold' }}>
+                  Departure flight
+                </p>
+                <TicketCard filteredData={filteredData} />
+              </div>
+              <div className="col">
+                <p style={{ color: 'deepskyblue', fontWeight: 'bold' }}>
+                  Return flight
+                </p>
+                <TicketCard filteredData={returnFilterData} />
+              </div>
+            </div>
+          ) : (
+            <>
+              <p style={{ color: 'deepskyblue', fontWeight: 'bold' }}>
+                Departure flight
+              </p>
+              <TicketCard filteredData={filteredData} />
+            </>
+          )}
         </div>
       </div>
     </div>

@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Result from './Result';
 import InputRange from 'react-input-range';
 import 'react-input-range/lib/css/index.css';
+import flightData from '../data';
 
 function Search() {
   const [btnType, setbtnType] = useState('oneWay');
@@ -13,6 +14,10 @@ function Search() {
   const [destinationCity, setDestinationCity] = useState('');
   const [departureDate, setDepartureDate] = useState('');
   const [returnDate, setReturnDate] = useState('');
+  const [filteredData, setFilteredData] = useState([]);
+
+  const [isSearchClicked, setIsSearchClicked] = useState(false);
+  const [returnFilterData, setReturnFilterData] = useState([]);
 
   const bookType = [
     {
@@ -29,14 +34,20 @@ function Search() {
     console.log(id, 'clicked');
     setbtnType(id);
     if (id === 'oneWay') {
+      setIsSearchClicked(false);
       setBookReturn(false);
+      setReturnDate('');
     } else if (id === 'return') {
+      setIsSearchClicked(false);
       setBookReturn(true);
     }
   };
 
   const handleCount = (key) => {
     if (key === 'add') {
+      if (passengerCount >= 5) {
+        return;
+      }
       setPassengerCount(passengerCount + 1);
     } else if (key === 'less') {
       if (passengerCount === 1) {
@@ -53,6 +64,50 @@ function Search() {
     e.currentTarget.type = 'text';
   };
 
+  useEffect(() => {
+    handleFilter();
+    returnFilter();
+  }, [priceRange]);
+
+  const handleFilter = () => {
+    let result = flightData.filter((data) => {
+      if (
+        data &&
+        data.from.city &&
+        data.to.city &&
+        data.from.city
+          .toLowerCase()
+          .includes(originCity.trim().toLowerCase()) &&
+        data.to.city
+          .toLowerCase()
+          .includes(destinationCity.trim().toLowerCase()) &&
+        data.depart === departureDate &&
+        data.price <= priceRange
+      ) {
+        return data;
+      }
+    });
+    setFilteredData(result);
+  };
+  const returnFilter = () => {
+    let result = flightData.filter((data) => {
+      if (
+        data &&
+        data.from.city &&
+        data.to.city &&
+        data.from.city
+          .toLowerCase()
+          .includes(destinationCity.trim().toLowerCase()) &&
+        data.to.city.toLowerCase().includes(originCity.trim().toLowerCase()) &&
+        data.depart === departureDate &&
+        data.price <= priceRange
+      ) {
+        return data;
+      }
+    });
+    setReturnFilterData(result);
+  };
+
   const handleSearch = () => {
     console.log('bookReturn', bookReturn);
     console.log('originCity', originCity);
@@ -60,6 +115,7 @@ function Search() {
     console.log('departureDate', departureDate);
     console.log('passengerCount', passengerCount);
     console.log('returnDAte', returnDate);
+    console.log('price range', priceRange);
     if (bookReturn && !returnDate) {
       alert("Return date can't be empty!");
     } else if (!originCity) {
@@ -69,12 +125,19 @@ function Search() {
     } else if (!departureDate) {
       alert("Departure date can't be empty!");
     }
+    if (originCity && destinationCity && departureDate) {
+      setIsSearchClicked(true);
+      handleFilter();
+      if (bookReturn && returnDate) {
+        returnFilter();
+      }
+    }
   };
 
   return (
     <div>
       <div className="row mt-4 ml-5 mr-5">
-        <div className="col-md-5">
+        <div className="col-md-4">
           <div className="card">
             <div className="card-body">
               <div className="card">
@@ -171,6 +234,7 @@ function Search() {
                   <div className="mt-4 mb-4">
                     <InputRange
                       minValue={0}
+                      step={100}
                       maxValue={10000}
                       formatLabel={(price) => `${price}`}
                       value={priceRange}
@@ -182,8 +246,13 @@ function Search() {
             </div>
           </div>
         </div>
-        <div className="col-md-7">
-          <Result />
+        <div className="col-md-8">
+          <Result
+            filteredData={filteredData}
+            bookReturn={bookReturn}
+            isSearchClicked={isSearchClicked}
+            returnFilterData={returnFilterData}
+          />
         </div>
       </div>
     </div>
