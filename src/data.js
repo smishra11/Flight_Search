@@ -1,4 +1,10 @@
 import airAsia from './assets/airAsia.png';
+import airIndia from './assets/airIndia.png';
+import emirates from './assets/emirates.png';
+import kuwait from './assets/Kuwait_Airways.png';
+import qatar from './assets/qatar_Airways.png';
+import saudia from './assets/Saudia.png';
+import vistara from './assets/vistara.png';
 
 const data = [
   // Date:25/02/2021
@@ -9,7 +15,7 @@ const data = [
     departTime: '10.15 am',
     arrivalTime: '11.45 am',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: saudia,
     from: {
       city: 'Delhi-DEL',
       short: 'DEL',
@@ -26,7 +32,7 @@ const data = [
     departTime: '12.20 pm',
     arrivalTime: '1.45 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: airIndia,
     from: {
       city: 'Delhi-DEL',
       short: 'DEL',
@@ -43,7 +49,7 @@ const data = [
     departTime: '4.20 pm',
     arrivalTime: '6.35 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: emirates,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -60,7 +66,7 @@ const data = [
     departTime: '7.05 pm',
     arrivalTime: '8.25 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: kuwait,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -77,7 +83,7 @@ const data = [
     departTime: '5.05 pm',
     arrivalTime: '6.25 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: qatar,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -94,7 +100,7 @@ const data = [
     departTime: '9.05 am',
     arrivalTime: '10.25 am',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: saudia,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -128,7 +134,7 @@ const data = [
     departTime: '11.23 am',
     arrivalTime: '12.25 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: vistara,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -162,7 +168,7 @@ const data = [
     departTime: '1.55 pm',
     arrivalTime: '3.10 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: airIndia,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -179,7 +185,7 @@ const data = [
     departTime: '4.05 pm',
     arrivalTime: '5.45 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: emirates,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -196,7 +202,7 @@ const data = [
     departTime: '1.23 pm',
     arrivalTime: '3.45 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: kuwait,
     from: {
       city: 'Delhi-DEL',
       short: 'DEl',
@@ -213,6 +219,7 @@ const data = [
     departTime: '2.33 pm',
     arrivalTime: '3.27 pm',
     code: 'TY-6239',
+    flightImg: qatar,
     from: {
       city: 'Delhi-DEL',
       short: 'DEl',
@@ -229,7 +236,7 @@ const data = [
     departTime: '4.19 pm',
     arrivalTime: '5.50 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: saudia,
     from: {
       city: 'Bangalore-BLR',
       short: 'BLR',
@@ -246,7 +253,7 @@ const data = [
     departTime: '7.33 am',
     arrivalTime: '8.57 am',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: vistara,
     from: {
       city: 'Bangalore-BLR',
       short: 'BLR',
@@ -280,7 +287,7 @@ const data = [
     departTime: '11.00 am',
     arrivalTime: '12.30 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: airIndia,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -297,7 +304,7 @@ const data = [
     departTime: '12.45 pm',
     arrivalTime: '1.50 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: emirates,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -314,7 +321,7 @@ const data = [
     departTime: '2.05 pm',
     arrivalTime: '3.10 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: kuwait,
     from: {
       city: 'Bangalore-BLR',
       short: 'BLR',
@@ -331,7 +338,7 @@ const data = [
     departTime: '3.15 pm',
     arrivalTime: '4.25 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: qatar,
     from: {
       city: 'Bangalore-BLR',
       short: 'BLR',
@@ -348,7 +355,7 @@ const data = [
     departTime: '4.35 pm',
     arrivalTime: '5.53 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: saudia,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -365,7 +372,7 @@ const data = [
     departTime: '6.00 pm',
     arrivalTime: '7.20 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: vistara,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -400,7 +407,7 @@ const data = [
     departTime: '12.20 pm',
     arrivalTime: '1.45 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: airIndia,
     from: {
       city: 'Delhi-DEL',
       short: 'DEL',
@@ -417,7 +424,7 @@ const data = [
     departTime: '4.20 pm',
     arrivalTime: '6.35 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: emirates,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -434,7 +441,7 @@ const data = [
     departTime: '7.05 pm',
     arrivalTime: '8.25 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: kuwait,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -451,7 +458,7 @@ const data = [
     departTime: '5.05 pm',
     arrivalTime: '6.25 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: qatar,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -468,7 +475,7 @@ const data = [
     departTime: '9.05 am',
     arrivalTime: '10.25 am',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: saudia,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -485,7 +492,7 @@ const data = [
     departTime: '9.50 am',
     arrivalTime: '11.25 am',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: vistara,
     from: {
       city: 'Bangalore-BLR',
       short: 'BLR',
@@ -502,7 +509,7 @@ const data = [
     departTime: '11.23 am',
     arrivalTime: '12.25 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: vistara,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -536,6 +543,7 @@ const data = [
     departTime: '1.55 pm',
     arrivalTime: '3.10 pm',
     code: 'TY-6239',
+    flightImg: airIndia,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -552,7 +560,7 @@ const data = [
     departTime: '4.05 pm',
     arrivalTime: '5.45 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: emirates,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -569,6 +577,7 @@ const data = [
     departTime: '1.23 pm',
     arrivalTime: '3.45 pm',
     code: 'TY-6239',
+    flightImg: kuwait,
     from: {
       city: 'Delhi-DEL',
       short: 'DEl',
@@ -585,7 +594,7 @@ const data = [
     departTime: '2.33 pm',
     arrivalTime: '3.27 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: qatar,
     from: {
       city: 'Delhi-DEL',
       short: 'DEl',
@@ -602,7 +611,7 @@ const data = [
     departTime: '4.19 pm',
     arrivalTime: '5.50 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: saudia,
     from: {
       city: 'Bangalore-BLR',
       short: 'BLR',
@@ -619,7 +628,7 @@ const data = [
     departTime: '7.33 am',
     arrivalTime: '8.57 am',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: vistara,
     from: {
       city: 'Bangalore-BLR',
       short: 'BLR',
@@ -636,6 +645,7 @@ const data = [
     departTime: '9.14 am',
     arrivalTime: '10.45 am',
     code: 'TY-6239',
+    flightImg: airAsia,
     from: {
       city: 'Delhi-DEL',
       short: 'DEL',
@@ -652,7 +662,7 @@ const data = [
     departTime: '11.00 am',
     arrivalTime: '12.30 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: airIndia,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -669,7 +679,7 @@ const data = [
     departTime: '12.45 pm',
     arrivalTime: '1.50 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: emirates,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -686,7 +696,7 @@ const data = [
     departTime: '2.05 pm',
     arrivalTime: '3.10 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: kuwait,
     from: {
       city: 'Bangalore-BLR',
       short: 'BLR',
@@ -703,7 +713,7 @@ const data = [
     departTime: '3.15 pm',
     arrivalTime: '4.25 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: qatar,
     from: {
       city: 'Bangalore-BLR',
       short: 'BLR',
@@ -720,7 +730,7 @@ const data = [
     departTime: '4.35 pm',
     arrivalTime: '5.53 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: saudia,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -737,7 +747,7 @@ const data = [
     departTime: '6.00 pm',
     arrivalTime: '7.20 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: vistara,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -772,7 +782,7 @@ const data = [
     departTime: '12.20 pm',
     arrivalTime: '1.45 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: airIndia,
     from: {
       city: 'Delhi-DEL',
       short: 'DEL',
@@ -789,7 +799,7 @@ const data = [
     departTime: '4.20 pm',
     arrivalTime: '6.35 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: emirates,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -806,7 +816,7 @@ const data = [
     departTime: '7.05 pm',
     arrivalTime: '8.25 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: kuwait,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -823,7 +833,7 @@ const data = [
     departTime: '5.05 pm',
     arrivalTime: '6.25 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: qatar,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -840,7 +850,7 @@ const data = [
     departTime: '9.05 am',
     arrivalTime: '10.25 am',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: saudia,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -857,7 +867,7 @@ const data = [
     departTime: '9.50 am',
     arrivalTime: '11.25 am',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: vistara,
     from: {
       city: 'Bangalore-BLR',
       short: 'BLR',
@@ -891,7 +901,7 @@ const data = [
     departTime: '1.25 pm',
     arrivalTime: '2.45 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: airIndia,
     from: {
       city: 'Mumbai-BOM',
       short: 'BOM',
@@ -908,7 +918,7 @@ const data = [
     departTime: '1.55 pm',
     arrivalTime: '3.10 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: emirates,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -925,7 +935,7 @@ const data = [
     departTime: '4.05 pm',
     arrivalTime: '5.45 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: kuwait,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -942,7 +952,7 @@ const data = [
     departTime: '1.23 pm',
     arrivalTime: '3.45 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: qatar,
     from: {
       city: 'Delhi-DEL',
       short: 'DEl',
@@ -959,7 +969,7 @@ const data = [
     departTime: '2.33 pm',
     arrivalTime: '3.27 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: saudia,
     from: {
       city: 'Delhi-DEL',
       short: 'DEl',
@@ -976,7 +986,7 @@ const data = [
     departTime: '4.19 pm',
     arrivalTime: '5.50 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: vistara,
     from: {
       city: 'Bangalore-BLR',
       short: 'BLR',
@@ -1010,7 +1020,7 @@ const data = [
     departTime: '9.14 am',
     arrivalTime: '10.45 am',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: airIndia,
     from: {
       city: 'Delhi-DEL',
       short: 'DEL',
@@ -1027,7 +1037,7 @@ const data = [
     departTime: '11.00 am',
     arrivalTime: '12.30 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: emirates,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -1044,7 +1054,7 @@ const data = [
     departTime: '12.45 pm',
     arrivalTime: '1.50 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: kuwait,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',
@@ -1061,7 +1071,7 @@ const data = [
     departTime: '2.05 pm',
     arrivalTime: '3.10 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: qatar,
     from: {
       city: 'Bangalore-BLR',
       short: 'BLR',
@@ -1078,7 +1088,7 @@ const data = [
     departTime: '3.15 pm',
     arrivalTime: '4.25 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: saudia,
     from: {
       city: 'Bangalore-BLR',
       short: 'BLR',
@@ -1095,7 +1105,7 @@ const data = [
     departTime: '4.35 pm',
     arrivalTime: '5.53 pm',
     code: 'TY-6239',
-    flightImg: airAsia,
+    flightImg: vistara,
     from: {
       city: 'Hyderabad-HYD',
       short: 'HYD',

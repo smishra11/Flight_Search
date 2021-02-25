@@ -34,12 +34,14 @@ function Result(props) {
                 </p>
                 <TicketCard filteredData={filteredData} />
               </div>
-              <div className="col">
-                <p style={{ color: 'deepskyblue', fontWeight: 'bold' }}>
-                  Return flight
-                </p>
-                <TicketCard filteredData={returnFilterData} />
-              </div>
+              {returnFilterData.length && returnFilterData ? (
+                <div className="col">
+                  <p style={{ color: 'deepskyblue', fontWeight: 'bold' }}>
+                    Return flight
+                  </p>
+                  <TicketCard filteredData={returnFilterData} />
+                </div>
+              ) : null}
             </div>
           ) : (
             <>

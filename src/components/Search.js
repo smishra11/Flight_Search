@@ -31,7 +31,6 @@ function Search() {
   ];
 
   const handleBookType = (id) => {
-    console.log(id, 'clicked');
     setbtnType(id);
     if (id === 'oneWay') {
       setIsSearchClicked(false);
@@ -109,13 +108,6 @@ function Search() {
   };
 
   const handleSearch = () => {
-    console.log('bookReturn', bookReturn);
-    console.log('originCity', originCity);
-    console.log('destinationCity', destinationCity);
-    console.log('departureDate', departureDate);
-    console.log('passengerCount', passengerCount);
-    console.log('returnDAte', returnDate);
-    console.log('price range', priceRange);
     if (bookReturn && !returnDate) {
       alert("Return date can't be empty!");
     } else if (!originCity) {
