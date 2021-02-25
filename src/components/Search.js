@@ -244,6 +244,7 @@ function Search() {
             bookReturn={bookReturn}
             isSearchClicked={isSearchClicked}
             returnFilterData={returnFilterData}
+            passengerCount={passengerCount}
           />
         </div>
       </div>

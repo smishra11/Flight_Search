@@ -1,7 +1,7 @@
 import React from 'react';
 
 function TicketCard(props) {
-  const { filteredData } = props;
+  const { filteredData, passengerCount } = props;
 
   return (
     <>
@@ -19,8 +19,19 @@ function TicketCard(props) {
                   }}
                 >
                   <div>
-                    <div style={{ marginBottom: '6px' }}>
-                      <b>₹ {data.price}</b>
+                    <div
+                      style={{
+                        marginBottom: '6px',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                      }}
+                    >
+                      <span>
+                        <b>₹ {data.price * passengerCount}</b>
+                      </span>
+                      <span style={{ fontSize: '11px' }}>
+                        <b>{passengerCount} P</b>
+                      </span>
                     </div>
                     <div>
                       <b>
