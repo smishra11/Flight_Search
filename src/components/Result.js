@@ -1,7 +1,7 @@
-import React from 'react';
-import forwardArrow from '../assets/Forward.svg';
-import TicketCard from './TicketCard';
-import EmptyPage from './emptyPage';
+import React from "react";
+import forwardArrow from "../assets/Forward.svg";
+import TicketCard from "./TicketCard";
+import EmptyPage from "./emptyPage";
 
 function Result(props) {
   const {
@@ -13,20 +13,18 @@ function Result(props) {
   } = props;
 
   return (
-    <div className="card">
+    <div className="card" style={{ height: "100%" }}>
       <div className="card-body">
         {!isSearchClicked &&
         filteredData.length === 0 &&
         returnFilterData.length === 0 ? (
-          <div>
-            <EmptyPage />
-          </div>
+          <EmptyPage />
         ) : isSearchClicked &&
           filteredData.length === 0 &&
           returnFilterData.length === 0 ? (
           <div
             className="d-flex justify-content-center"
-            style={{ color: 'red' }}
+            style={{ color: "red" }}
           >
             <h3>Not Found</h3>
           </div>
@@ -35,11 +33,11 @@ function Result(props) {
             <div className="mb-4">
               <div
                 style={{
-                  fontSize: '20px',
-                  fontWeight: 'bold',
+                  fontSize: "20px",
+                  fontWeight: "bold",
                 }}
               >
-                Available flights{' '}
+                Available flights{" "}
                 <span>
                   <img src={forwardArrow} alt="arrow" className="ml-2" />
                 </span>
@@ -49,7 +47,7 @@ function Result(props) {
               {bookReturn && isSearchClicked ? (
                 <div className="row">
                   <div className="col">
-                    <div style={{ color: 'deepskyblue', fontWeight: 'bold' }}>
+                    <div style={{ color: "deepskyblue", fontWeight: "bold" }}>
                       Departure flight
                       <p>{filteredData[0].depart}</p>
                     </div>
@@ -60,7 +58,7 @@ function Result(props) {
                   </div>
                   {returnFilterData.length && returnFilterData ? (
                     <div className="col">
-                      <div style={{ color: 'deepskyblue', fontWeight: 'bold' }}>
+                      <div style={{ color: "deepskyblue", fontWeight: "bold" }}>
                         Return flight
                         <p>{returnFilterData[0].depart}</p>
                       </div>
@@ -73,7 +71,7 @@ function Result(props) {
                 </div>
               ) : (
                 <>
-                  <div style={{ color: 'deepskyblue', fontWeight: 'bold' }}>
+                  <div style={{ color: "deepskyblue", fontWeight: "bold" }}>
                     Departure flight
                     <p>{filteredData[0].depart}</p>
                   </div>
